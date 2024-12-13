@@ -1,10 +1,15 @@
 namespace ProjectX
 {
-    public partial class Form1 : Form
+    public partial class SignPage : Form
     {
-        public Form1()
+        public SignPage()
         {
             InitializeComponent();
+        }
+
+        private void SignPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
