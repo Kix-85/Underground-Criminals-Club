@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignPage));
             SignPanel = new Panel();
-            SignLabel = new Label();
-            userNameBox = new TextBox();
-            passWordBox = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            signInButton = new Button();
-            signUpButton = new Button();
             label3 = new Label();
+            signUpButton = new Button();
+            signInButton = new Button();
+            label2 = new Label();
+            label1 = new Label();
+            passWordBox = new TextBox();
+            criminalIDBox = new TextBox();
+            SignLabel = new Label();
             SignPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,12 +52,90 @@
             SignPanel.Controls.Add(label2);
             SignPanel.Controls.Add(label1);
             SignPanel.Controls.Add(passWordBox);
-            SignPanel.Controls.Add(userNameBox);
+            SignPanel.Controls.Add(criminalIDBox);
             SignPanel.Controls.Add(SignLabel);
             SignPanel.Location = new Point(214, 110);
             SignPanel.Name = "SignPanel";
             SignPanel.Size = new Size(856, 484);
             SignPanel.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(243, 251, 253);
+            label3.Location = new Point(312, 359);
+            label3.Name = "label3";
+            label3.Size = new Size(246, 28);
+            label3.TabIndex = 5;
+            label3.Text = "New criminal? no problem.";
+            // 
+            // signUpButton
+            // 
+            signUpButton.Font = new Font("Segoe UI", 20F);
+            signUpButton.ForeColor = Color.FromArgb(36, 46, 50);
+            signUpButton.Location = new Point(195, 395);
+            signUpButton.Name = "signUpButton";
+            signUpButton.Size = new Size(485, 53);
+            signUpButton.TabIndex = 4;
+            signUpButton.Text = "Sign Up";
+            signUpButton.UseVisualStyleBackColor = true;
+            // 
+            // signInButton
+            // 
+            signInButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            signInButton.ForeColor = Color.FromArgb(36, 46, 50);
+            signInButton.Location = new Point(195, 297);
+            signInButton.Name = "signInButton";
+            signInButton.Size = new Size(485, 53);
+            signInButton.TabIndex = 4;
+            signInButton.Text = "Sign In";
+            signInButton.UseVisualStyleBackColor = true;
+            signInButton.Click += signInButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(243, 251, 253);
+            label2.Location = new Point(195, 186);
+            label2.Name = "label2";
+            label2.Size = new Size(177, 50);
+            label2.TabIndex = 3;
+            label2.Text = "Password";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(243, 251, 253);
+            label1.Location = new Point(195, 84);
+            label1.Name = "label1";
+            label1.Size = new Size(203, 50);
+            label1.TabIndex = 2;
+            label1.Text = "Criminal ID";
+            // 
+            // passWordBox
+            // 
+            passWordBox.BackColor = Color.WhiteSmoke;
+            passWordBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            passWordBox.Location = new Point(195, 244);
+            passWordBox.Name = "passWordBox";
+            passWordBox.PasswordChar = '*';
+            passWordBox.Size = new Size(485, 38);
+            passWordBox.TabIndex = 1;
+            // 
+            // criminalIDBox
+            // 
+            criminalIDBox.BackColor = Color.WhiteSmoke;
+            criminalIDBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            criminalIDBox.Location = new Point(195, 141);
+            criminalIDBox.Name = "criminalIDBox";
+            criminalIDBox.Size = new Size(485, 38);
+            criminalIDBox.TabIndex = 1;
             // 
             // SignLabel
             // 
@@ -72,82 +150,6 @@
             SignLabel.Text = "Underground Criminals Club";
             SignLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // userNameBox
-            // 
-            userNameBox.BackColor = Color.WhiteSmoke;
-            userNameBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userNameBox.Location = new Point(195, 141);
-            userNameBox.Name = "userNameBox";
-            userNameBox.Size = new Size(485, 38);
-            userNameBox.TabIndex = 1;
-            // 
-            // passWordBox
-            // 
-            passWordBox.BackColor = Color.WhiteSmoke;
-            passWordBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            passWordBox.Location = new Point(195, 244);
-            passWordBox.Name = "passWordBox";
-            passWordBox.Size = new Size(485, 38);
-            passWordBox.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(243, 251, 253);
-            label1.Location = new Point(339, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(203, 50);
-            label1.TabIndex = 2;
-            label1.Text = "User Name";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(243, 251, 253);
-            label2.Location = new Point(350, 191);
-            label2.Name = "label2";
-            label2.Size = new Size(177, 50);
-            label2.TabIndex = 3;
-            label2.Text = "Password";
-            // 
-            // signInButton
-            // 
-            signInButton.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            signInButton.ForeColor = Color.FromArgb(36, 46, 50);
-            signInButton.Location = new Point(195, 297);
-            signInButton.Name = "signInButton";
-            signInButton.Size = new Size(485, 53);
-            signInButton.TabIndex = 4;
-            signInButton.Text = "Sign In";
-            signInButton.UseVisualStyleBackColor = true;
-            // 
-            // signUpButton
-            // 
-            signUpButton.Font = new Font("Segoe UI", 20F);
-            signUpButton.ForeColor = Color.FromArgb(36, 46, 50);
-            signUpButton.Location = new Point(195, 395);
-            signUpButton.Name = "signUpButton";
-            signUpButton.Size = new Size(485, 53);
-            signUpButton.TabIndex = 4;
-            signUpButton.Text = "Sign Up";
-            signUpButton.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(243, 251, 253);
-            label3.Location = new Point(312, 362);
-            label3.Name = "label3";
-            label3.Size = new Size(246, 28);
-            label3.TabIndex = 5;
-            label3.Text = "New criminal? no problem.";
-            // 
             // SignPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -159,7 +161,7 @@
             ForeColor = Color.Goldenrod;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "SignPage";
-            Text = "نادي المجرمين السري";
+            Text = "UCC";
             TransparencyKey = Color.White;
             SignPanel.ResumeLayout(false);
             SignPanel.PerformLayout();
@@ -170,7 +172,7 @@
 
         private Panel SignPanel;
         private Label SignLabel;
-        private TextBox userNameBox;
+        private TextBox criminalIDBox;
         private TextBox passWordBox;
         private Label label1;
         private Button signUpButton;
