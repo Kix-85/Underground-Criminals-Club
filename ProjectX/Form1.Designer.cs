@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignPage));
             SignPanel = new Panel();
             label3 = new Label();
-            signUpButton = new Button();
+            registerButton = new Button();
             signInButton = new Button();
             label2 = new Label();
             label1 = new Label();
@@ -47,7 +47,7 @@
             SignPanel.BackgroundImageLayout = ImageLayout.None;
             SignPanel.BorderStyle = BorderStyle.Fixed3D;
             SignPanel.Controls.Add(label3);
-            SignPanel.Controls.Add(signUpButton);
+            SignPanel.Controls.Add(registerButton);
             SignPanel.Controls.Add(signInButton);
             SignPanel.Controls.Add(label2);
             SignPanel.Controls.Add(label1);
@@ -71,16 +71,16 @@
             label3.TabIndex = 5;
             label3.Text = "New criminal? no problem.";
             // 
-            // signUpButton
+            // registerButton
             // 
-            signUpButton.Font = new Font("Segoe UI", 20F);
-            signUpButton.ForeColor = Color.FromArgb(36, 46, 50);
-            signUpButton.Location = new Point(195, 395);
-            signUpButton.Name = "signUpButton";
-            signUpButton.Size = new Size(485, 53);
-            signUpButton.TabIndex = 4;
-            signUpButton.Text = "Sign Up";
-            signUpButton.UseVisualStyleBackColor = true;
+            registerButton.Font = new Font("Segoe UI", 20F);
+            registerButton.ForeColor = Color.FromArgb(36, 46, 50);
+            registerButton.Location = new Point(195, 395);
+            registerButton.Name = "registerButton";
+            registerButton.Size = new Size(485, 53);
+            registerButton.TabIndex = 4;
+            registerButton.Text = "Register";
+            registerButton.UseVisualStyleBackColor = true;
             // 
             // signInButton
             // 
@@ -100,7 +100,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(243, 251, 253);
-            label2.Location = new Point(195, 186);
+            label2.Location = new Point(195, 185);
             label2.Name = "label2";
             label2.Size = new Size(177, 50);
             label2.TabIndex = 3;
@@ -122,7 +122,7 @@
             // 
             passWordBox.BackColor = Color.WhiteSmoke;
             passWordBox.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            passWordBox.Location = new Point(195, 244);
+            passWordBox.Location = new Point(195, 243);
             passWordBox.Name = "passWordBox";
             passWordBox.PasswordChar = '*';
             passWordBox.Size = new Size(485, 38);
@@ -160,6 +160,7 @@
             Controls.Add(SignPanel);
             ForeColor = Color.Goldenrod;
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SignPage";
             Text = "UCC";
             TransparencyKey = Color.White;
@@ -175,7 +176,7 @@
         private TextBox criminalIDBox;
         private TextBox passWordBox;
         private Label label1;
-        private Button signUpButton;
+        private Button registerButton;
         private Button signInButton;
         private Label label2;
         private Label label3;

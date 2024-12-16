@@ -46,4 +46,12 @@
     </COMReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\User\source\repos\ProjectX\ProjectX\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\User\source\repos\ProjectX\ProjectX\.editorconfig" />
+  </ItemGroup>
+
 </Project>

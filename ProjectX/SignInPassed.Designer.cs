@@ -60,6 +60,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1266, 677);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SignInPassed";
             Text = "SignInPassed";
             Load += SignInPassed_Load;
