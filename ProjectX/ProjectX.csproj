@@ -51,7 +51,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Coding Challenge.gif" />
+    <None Remove="Resources\MainStory.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="C:\Users\User\source\repos\ProjectX\ProjectX\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Coding Challenge.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MainStory.gif" />
   </ItemGroup>
 
 </Project>

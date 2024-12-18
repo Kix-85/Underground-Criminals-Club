@@ -28,23 +28,35 @@ namespace ProjectX
                 string[] record = signInData[i].Split(",");
                 string criminalId = record[0];
                 string passWord = record[1].Trim();
-                if (criminalId == criminalIDBox.Text)
+                if (criminalIDBox.Text == "admin")
                 {
-                    if (passWord == passWordBox.Text)
+                    if (passWordBox.Text == "admin")
                     {
-                        //Play the game
-                        
-                        SignInPassed signInPassed = new SignInPassed();
-                        signInPassed.Show();
-                        this.Hide();
 
-                        break;
                     }
                 }
-                if (i == signInData.Length - 1)
+                else
                 {
-                    correct = false;
+                    if (criminalId == criminalIDBox.Text)
+                    {
+                        if (passWord == passWordBox.Text)
+                        {
+                            //Play the game
+
+                            SignInPassed signInPassed = new SignInPassed();
+                            signInPassed.Location = this.Location;
+                            signInPassed.Show();
+                            signInPassed.Activate();
+                            this.Hide();
+                            return;
+                        }
+                    }
+                    if (i == signInData.Length - 1)
+                    {
+                        correct = false;
+                    }
                 }
+                
 
             }
             if (!correct)

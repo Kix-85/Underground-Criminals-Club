@@ -100,7 +100,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(243, 251, 253);
-            label2.Location = new Point(195, 185);
+            label2.Location = new Point(183, 182);
             label2.Name = "label2";
             label2.Size = new Size(177, 50);
             label2.TabIndex = 3;
@@ -112,7 +112,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(243, 251, 253);
-            label1.Location = new Point(195, 84);
+            label1.Location = new Point(183, 84);
             label1.Name = "label1";
             label1.Size = new Size(203, 50);
             label1.TabIndex = 2;
