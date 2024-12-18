@@ -49,40 +49,44 @@ namespace ProjectX
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            criminalDataStream = new FileStream(filename, FileMode.Append, FileAccess.Write);
-            criminalStreamWriter = new StreamWriter(criminalDataStream);
-            criminalStreamWriter.Write(criminalIDBox.Text + "," + passwordBox.Text + "," + nickNameBox.Text + "," + crimeBox.Text + "," + yearsBox.Text + "," + ageBox.Text + "," + path);
-            if (maleBox.Checked)
-            {
-                criminalStreamWriter.Write(",male");
-            }
-            if (femaleBox.Checked)
-            {
-                criminalStreamWriter.Write(",female");
-            }
-            criminalIndexStream = new FileStream(indexfilename, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            criminalIndexWriter = new StreamWriter(criminalIndexStream);
-            criminalIndexWriter.WriteLine(criminalIDBox.Text + "," + passwordBox.Text);
-            criminalIndexWriter.Close();
-            criminalIndexStream.Close();
-            criminalStreamWriter.Close();
-            criminalDataStream.Close();
-        }
-        private void userNameBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
+{
+    criminalDataStream = new FileStream(filename, FileMode.Append, FileAccess.Write);
+    criminalStreamWriter = new StreamWriter(criminalDataStream);
+    criminalStreamWriter.Write(criminalIDBox.Text + "," + passwordBox.Text + "," + nickNameBox.Text + "," + crimeBox.Text + "," + yearsBox.Text + "," + ageBox.Text +","+gender(femaleBox.Checked,maleBox.Checked)+ "," + path);
+    criminalIndexStream = new FileStream(indexfilename, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+    criminalIndexWriter = new StreamWriter(criminalIndexStream);
+    criminalIndexWriter.WriteLine(criminalIDBox.Text + "," + passwordBox.Text);
+    criminalIndexWriter.Close();
+    criminalIndexStream.Close();
+    criminalStreamWriter.Close();
+    criminalDataStream.Close();
+}
+private void userNameBox_KeyPress(object sender, KeyPressEventArgs e)
+{
 
-        }
-        string path;
-        private void criminalBox_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
-            path = openFileDialog.FileName; 
-        }
-        private void criminalBox_DoubleClick(object sender, EventArgs e)
-        {
+}
+string path;
+private void criminalBox_Click(object sender, EventArgs e)
+{
+    OpenFileDialog openFileDialog = new OpenFileDialog();
+    openFileDialog.ShowDialog();
+    path = openFileDialog.FileName; 
+}
+private void criminalBox_DoubleClick(object sender, EventArgs e)
+{
 
-        }
+}
+string gender(bool xy,bool xx)
+{
+    if (xx)
+    {
+        return "Female";
+    }
+    else if(xy)
+    {
+        return "Male";
+    }
+    return "Not specified";
+}
     }
 }
