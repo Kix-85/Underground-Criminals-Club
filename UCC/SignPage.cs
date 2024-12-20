@@ -1,6 +1,6 @@
 using System.Windows.Forms.Design;
 using System.IO;
-namespace ProjectX
+namespace UCC
 {
     public partial class SignPage : Form
     {
