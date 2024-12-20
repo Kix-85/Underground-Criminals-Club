@@ -1,4 +1,4 @@
-﻿namespace ProjectX
+﻿namespace UCC
 {
     public partial class DashBoard : Form
     {
