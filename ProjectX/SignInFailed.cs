@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace ProjectX
 {
-    public partial class Form2 : Form
+    public partial class SignInFailed : Form
     {
-        public Form2()
+        public string imagePath = "../../../Resources/Images/", filePath = "../../../Resources/Files/", videoPath = "../../../Resources/Videos/", iconPath = "../../../Resources/Icons/";
+        public SignInFailed()
         {
             InitializeComponent();
+            BackgroundImage = Image.FromFile(imagePath + "signBG.png");
         }
 
         private void Form2_Load(object sender, EventArgs e)

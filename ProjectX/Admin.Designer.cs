@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             label1 = new Label();
             insert = new Button();
             delete = new Button();
             squeeze = new Button();
             search = new Button();
-            pictureBox1 = new PictureBox();
+            profilePicture = new PictureBox();
             input = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            Clear = new Button();
+            ((System.ComponentModel.ISupportInitialize)profilePicture).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -102,32 +102,44 @@
             search.UseVisualStyleBackColor = false;
             search.Click += search_Click;
             // 
-            // pictureBox1
+            // profilePicture
             // 
-            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(206, 196);
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            profilePicture.BorderStyle = BorderStyle.Fixed3D;
+            profilePicture.Location = new Point(16, 16);
+            profilePicture.Name = "profilePicture";
+            profilePicture.Size = new Size(206, 196);
+            profilePicture.TabIndex = 5;
+            profilePicture.TabStop = false;
             // 
             // input
             // 
             input.Font = new Font("Segoe UI", 30F);
             input.Location = new Point(99, 222);
             input.Name = "input";
-            input.Size = new Size(1082, 74);
+            input.Size = new Size(777, 74);
             input.TabIndex = 6;
+            // 
+            // Clear
+            // 
+            Clear.BackColor = Color.Cornsilk;
+            Clear.Font = new Font("Segoe UI Semibold", 30F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Clear.Location = new Point(880, 222);
+            Clear.Name = "Clear";
+            Clear.Size = new Size(301, 74);
+            Clear.TabIndex = 7;
+            Clear.Text = "Clear";
+            Clear.UseVisualStyleBackColor = false;
+            Clear.Click += Clear_Click;
             // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Image.FromFile("../../../Resources/Images/mainBG.png");
             ClientSize = new Size(1266, 677);
+            Controls.Add(profilePicture);
+            Controls.Add(Clear);
             Controls.Add(input);
-            Controls.Add(pictureBox1);
             Controls.Add(squeeze);
             Controls.Add(search);
             Controls.Add(delete);
@@ -135,7 +147,7 @@
             Controls.Add(label1);
             Name = "Admin";
             Text = "Admin";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)profilePicture).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,7 +159,8 @@
         private Button delete;
         private Button squeeze;
         private Button search;
-        private PictureBox pictureBox1;
+        private PictureBox profilePicture;
         private TextBox input;
+        private Button Clear;
     }
 }

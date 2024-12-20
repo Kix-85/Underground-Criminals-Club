@@ -1,0 +1,10 @@
+C12345,pass@1234
+C67890,securePass567
+C11223,illeg@lCode
+C33445,crimeMaster!99
+C55678,lawBreaker@101
+C78901,hidden@password8
+C23456,offender123$
+C56789,deepSecret$22
+C89012,shadowPass#456
+C34567,CunsafePass@101

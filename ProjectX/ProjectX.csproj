@@ -60,11 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Coding Challenge.gif" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\MainStory.gif" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

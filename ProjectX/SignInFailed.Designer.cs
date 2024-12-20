@@ -1,6 +1,6 @@
 ﻿namespace ProjectX
 {
-    partial class Form2
+    partial class SignInFailed
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInFailed));
             panel1 = new Panel();
             axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             panel1.SuspendLayout();
@@ -57,7 +57,6 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.photo_2024_12_16_11_54_09;
             ClientSize = new Size(1266, 677);
             Controls.Add(panel1);
             Name = "Form2";

@@ -31,7 +31,6 @@ namespace ProjectX
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             profilePicture = new PictureBox();
             label1 = new Label();
             button1 = new Button();
@@ -51,7 +50,6 @@ namespace ProjectX
             // 
             // profilePicture
             // 
-            profilePicture.BackgroundImage = (Image)resources.GetObject("profilePicture.BackgroundImage");
             profilePicture.BackgroundImageLayout = ImageLayout.Stretch;
             profilePicture.Location = new Point(23, 20);
             profilePicture.Name = "profilePicture";
@@ -121,7 +119,6 @@ namespace ProjectX
             // 
             mainStory.BackColor = SystemColors.ActiveCaptionText;
             mainStory.BorderStyle = BorderStyle.Fixed3D;
-            mainStory.Image = (Image)resources.GetObject("mainStory.Image");
             mainStory.Location = new Point(475, 325);
             mainStory.Name = "mainStory";
             mainStory.Size = new Size(338, 314);
@@ -132,7 +129,6 @@ namespace ProjectX
             // 
             codingChallenge.BackColor = SystemColors.ActiveCaptionText;
             codingChallenge.BorderStyle = BorderStyle.Fixed3D;
-            codingChallenge.Image = (Image)resources.GetObject("codingChallenge.Image");
             codingChallenge.Location = new Point(96, 325);
             codingChallenge.Name = "codingChallenge";
             codingChallenge.Size = new Size(338, 314);
@@ -143,7 +139,6 @@ namespace ProjectX
             // 
             mathsChallenge.BackColor = SystemColors.ActiveCaptionText;
             mathsChallenge.BorderStyle = BorderStyle.Fixed3D;
-            mathsChallenge.Image = (Image)resources.GetObject("mathsChallenge.Image");
             mathsChallenge.Location = new Point(852, 325);
             mathsChallenge.Name = "mathsChallenge";
             mathsChallenge.Size = new Size(338, 314);
@@ -166,7 +161,6 @@ namespace ProjectX
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1266, 677);
             Controls.Add(label3);
             Controls.Add(mathsChallenge);

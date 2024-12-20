@@ -81,6 +81,7 @@
             registerButton.TabIndex = 4;
             registerButton.Text = "Register";
             registerButton.UseVisualStyleBackColor = true;
+            registerButton.Click += registerButton_Click;
             // 
             // signInButton
             // 
@@ -154,11 +155,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(234, 224, 204);
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
+            BackgroundImage= Image.FromFile("../../../Resources/Images/signBG.png");
             ClientSize = new Size(1262, 673);
             Controls.Add(SignPanel);
-            ForeColor = Color.Goldenrod;
+            ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SignPage";

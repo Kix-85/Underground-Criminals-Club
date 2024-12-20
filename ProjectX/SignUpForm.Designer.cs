@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             panel1 = new Panel();
             button1 = new Button();
             label6 = new Label();
@@ -36,7 +35,7 @@
             passwordBox = new TextBox();
             criminalIDBox = new TextBox();
             crimeBox = new ComboBox();
-            criminalBox = new PictureBox();
+            criminalPhoto = new PictureBox();
             femaleBox = new RadioButton();
             maleBox = new RadioButton();
             label4 = new Label();
@@ -48,7 +47,7 @@
             ageBox = new TextBox();
             yearsBox = new TextBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)criminalBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)criminalPhoto).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -60,7 +59,7 @@
             panel1.Controls.Add(passwordBox);
             panel1.Controls.Add(criminalIDBox);
             panel1.Controls.Add(crimeBox);
-            panel1.Controls.Add(criminalBox);
+            panel1.Controls.Add(criminalPhoto);
             panel1.Controls.Add(femaleBox);
             panel1.Controls.Add(maleBox);
             panel1.Controls.Add(label4);
@@ -85,7 +84,7 @@
             button1.TabIndex = 9;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += register_Click;
             // 
             // label6
             // 
@@ -120,14 +119,13 @@
             passwordBox.Size = new Size(236, 34);
             passwordBox.TabIndex = 5;
             // 
-            // userNameBox
+            // criminalIDBox
             // 
             criminalIDBox.Font = new Font("Segoe UI", 12F);
             criminalIDBox.Location = new Point(273, 114);
-            criminalIDBox.Name = "userNameBox";
+            criminalIDBox.Name = "criminalIDBox";
             criminalIDBox.Size = new Size(236, 34);
             criminalIDBox.TabIndex = 6;
-            criminalIDBox.KeyPress += userNameBox_KeyPress;
             // 
             // crimeBox
             // 
@@ -139,15 +137,15 @@
             crimeBox.Size = new Size(236, 36);
             crimeBox.TabIndex = 4;
             // 
-            // criminalBox
+            // criminalPhoto
             // 
-            criminalBox.Location = new Point(76, 66);
-            criminalBox.Name = "criminalBox";
-            criminalBox.Size = new Size(158, 158);
-            criminalBox.TabIndex = 3;
-            criminalBox.TabStop = false;
-            criminalBox.Click += criminalBox_Click;
-            criminalBox.DoubleClick += criminalBox_DoubleClick;
+            criminalPhoto.Location = new Point(76, 66);
+            criminalPhoto.Name = "criminalPhoto";
+            criminalPhoto.Size = new Size(158, 158);
+            criminalPhoto.SizeMode = PictureBoxSizeMode.Zoom;
+            criminalPhoto.TabIndex = 3;
+            criminalPhoto.TabStop = false;
+            criminalPhoto.Click += criminalPhoto_Click;
             // 
             // femaleBox
             // 
@@ -162,7 +160,6 @@
             femaleBox.TabStop = true;
             femaleBox.Text = "Female";
             femaleBox.UseVisualStyleBackColor = false;
-            femaleBox.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // maleBox
             // 
@@ -177,7 +174,6 @@
             maleBox.TabStop = true;
             maleBox.Text = "Male";
             maleBox.UseVisualStyleBackColor = false;
-            maleBox.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // label4
             // 
@@ -238,7 +234,6 @@
             label1.Size = new Size(159, 37);
             label1.TabIndex = 1;
             label1.Text = "Years In Jail ";
-            label1.Click += label1_Click;
             // 
             // nickNameBox
             // 
@@ -264,24 +259,21 @@
             yearsBox.Name = "yearsBox";
             yearsBox.Size = new Size(236, 34);
             yearsBox.TabIndex = 0;
-            yearsBox.TextChanged += textBox1_TextChanged;
             // 
             // SignUpForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1266, 677);
             Controls.Add(panel1);
             DoubleBuffered = true;
             Name = "SignUpForm";
             Text = "signUpForm";
-            Load += signUpForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)criminalBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)criminalPhoto).EndInit();
             ResumeLayout(false);
         }
 
@@ -298,7 +290,7 @@
         private RadioButton femaleBox;
         private RadioButton maleBox;
         private Label label5;
-        private PictureBox criminalBox;
+        private PictureBox criminalPhoto;
         private ComboBox crimeBox;
         private Label label6;
         private Label label7;
