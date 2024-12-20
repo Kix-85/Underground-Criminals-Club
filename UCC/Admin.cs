@@ -14,18 +14,21 @@ namespace UCC
     {
         FileStream indexFile;
         StreamReader indexFileReader;
-        public string imagePath = "../../../Resources/Images/",filePath= "../../../Resources/Files/",videoPath= "../../../Resources/Videos/",iconPath= "../../../Resources/Icons/";
+        StreamWriter indexFileWriter;
+        private TextBox acc_Id;
+        public string imagePath = "../../../Resources/Images/", filePath = "../../../Resources/Files/", videoPath = "../../../Resources/Videos/", iconPath = "../../../Resources/Icons/";
+
         public Admin()
         {
             InitializeComponent();
-            BackgroundImage = Image.FromFile(imagePath+"mainBG.png");
+            BackgroundImage = Image.FromFile(imagePath + "mainBG.png");
             profilePicture.Image = Image.FromFile(imagePath + "profilePicture.png");
         }
 
         private void insert_Click(object sender, EventArgs e)
         {
             SignUpForm signUpForm = new SignUpForm();
-            signUpForm.Location= Location;
+            signUpForm.Location = Location;
             signUpForm.Show();
             Hide();
             Close();
@@ -33,6 +36,25 @@ namespace UCC
 
         private void delete_Click(object sender, EventArgs e)
         {
+            indexFile.Seek(0, SeekOrigin.Begin);
+            indexFile.Flush();
+            indexFileWriter.Flush();
+            string line;
+            string[] field;
+            int count = 0;
+            while ((line = indexFileReader.ReadLine()) != null)
+            {
+                field = line.Split(',');
+
+                if (field[0] == acc_Id.Text)
+                {
+                    indexFile.Seek(count, SeekOrigin.Begin);
+                    indexFileWriter.Write("*");
+                    indexFileWriter.Flush();
+                    indexFile.Flush();
+                }
+                count += line.Length + 2;
+            }
 
         }
 
@@ -44,12 +66,27 @@ namespace UCC
 
         private void squeeze_Click(object sender, EventArgs e)
         {
-
+            string line;
+            indexFile.Seek(0, SeekOrigin.Begin);
+            FileStream SQfile = new
+            FileStream("Squeeze.txt", FileMode.Create, FileAccess.Write);
+            StreamWriter SQwriter = new StreamWriter(SQfile);
+            while ((line = indexFileReader.ReadLine()) != null)
+            {
+                if (line[0] != '*')
+                {
+                    SQwriter.WriteLine(line);
+                    SQwriter.Flush();
+                }
+            }
+            SQwriter.Close();
+            SQfile.Close();
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
             input.Text = string.Empty;
+
         }
     }
 }
