@@ -1,4 +1,4 @@
-namespace ProjectX
+namespace UCC
 {
     internal static class Program
     {
