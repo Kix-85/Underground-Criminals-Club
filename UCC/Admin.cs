@@ -15,7 +15,10 @@ namespace UCC
         FileStream indexFile;
         StreamReader indexFileReader;
         StreamWriter indexFileWriter;
+<<<<<<< HEAD
         private TextBox criminal_Id;
+=======
+>>>>>>> a271fbcb66e9a24312becc9095236c79ea0f9f38
         public string imagePath = "../../../Resources/Images/", filePath = "../../../Resources/Files/", videoPath = "../../../Resources/Videos/", iconPath = "../../../Resources/Icons/";
 
         public Admin()
@@ -46,7 +49,11 @@ namespace UCC
             {
                 field = line.Split(',');
 
+<<<<<<< HEAD
                 if (field[0] == criminal_Id.Text)
+=======
+                if (field[0] == input.Text)
+>>>>>>> a271fbcb66e9a24312becc9095236c79ea0f9f38
                 {
                     indexFile.Seek(count, SeekOrigin.Begin);
                     indexFileWriter.Write("*");
@@ -60,7 +67,7 @@ namespace UCC
 
         private void search_Click(object sender, EventArgs e)
         {
-            indexFile = new FileStream("IndexFile.txt", FileMode.Open, FileAccess.Read);
+            indexFile = new FileStream(filePath+"IndexFile.txt", FileMode.Open, FileAccess.Read);
             indexFileReader = new StreamReader(indexFile);
         }
 
@@ -69,7 +76,7 @@ namespace UCC
             string line;
             indexFile.Seek(0, SeekOrigin.Begin);
             FileStream SQfile = new
-            FileStream("Squeeze.txt", FileMode.Create, FileAccess.Write);
+            FileStream(filePath+"Squeeze.txt", FileMode.Create, FileAccess.Write);
             StreamWriter SQwriter = new StreamWriter(SQfile);
             while ((line = indexFileReader.ReadLine()) != null)
             {
