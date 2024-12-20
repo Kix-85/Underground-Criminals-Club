@@ -15,7 +15,7 @@ namespace UCC
         FileStream indexFile;
         StreamReader indexFileReader;
         StreamWriter indexFileWriter;
-        private TextBox acc_Id;
+        private TextBox criminal_Id;
         public string imagePath = "../../../Resources/Images/", filePath = "../../../Resources/Files/", videoPath = "../../../Resources/Videos/", iconPath = "../../../Resources/Icons/";
 
         public Admin()
@@ -46,7 +46,7 @@ namespace UCC
             {
                 field = line.Split(',');
 
-                if (field[0] == acc_Id.Text)
+                if (field[0] == criminal_Id.Text)
                 {
                     indexFile.Seek(count, SeekOrigin.Begin);
                     indexFileWriter.Write("*");
