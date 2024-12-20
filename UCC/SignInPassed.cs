@@ -11,7 +11,7 @@ using MediaPlayer;
 using AxWMPLib;
 using WMPLib;
 
-namespace ProjectX
+namespace UCC
 {
     public partial class SignInPassed : Form
     {
