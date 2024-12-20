@@ -1,4 +1,4 @@
-﻿namespace ProjectX
+﻿namespace UCC
 {
     partial class SignInPassed
     {
