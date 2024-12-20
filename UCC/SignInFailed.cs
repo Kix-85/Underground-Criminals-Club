@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectX
+namespace UCC
 {
     public partial class SignInFailed : Form
     {
