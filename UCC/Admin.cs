@@ -59,7 +59,7 @@ namespace UCC
 
         private void search_Click(object sender, EventArgs e)
         {
-            indexFile = new FileStream("IndexFile.txt", FileMode.Open, FileAccess.Read);
+            indexFile = new FileStream(filePath+"IndexFile.txt", FileMode.Open, FileAccess.Read);
             indexFileReader = new StreamReader(indexFile);
         }
 
@@ -68,7 +68,7 @@ namespace UCC
             string line;
             indexFile.Seek(0, SeekOrigin.Begin);
             FileStream SQfile = new
-            FileStream("Squeeze.txt", FileMode.Create, FileAccess.Write);
+            FileStream(filePath+"Squeeze.txt", FileMode.Create, FileAccess.Write);
             StreamWriter SQwriter = new StreamWriter(SQfile);
             while ((line = indexFileReader.ReadLine()) != null)
             {
