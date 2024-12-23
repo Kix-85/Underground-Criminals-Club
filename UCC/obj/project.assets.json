@@ -8,19 +8,27 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\20100\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj",
       "projectName": "UCC",
       "projectPath": "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\obj\\",
+=======
+      "projectUniqueName": "D:\\FP Project\\UCC\\UCC.csproj",
+      "projectName": "UCC",
+      "projectPath": "D:\\FP Project\\UCC\\UCC.csproj",
+      "packagesPath": "C:\\Users\\20100\\.nuget\\packages\\",
+      "outputPath": "D:\\FP Project\\UCC\\obj\\",
+>>>>>>> 3ad69b9ebda37429dcf94fb972bcec1d0750b2e8
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\20100\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +36,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

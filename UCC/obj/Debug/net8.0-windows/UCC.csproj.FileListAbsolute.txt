@@ -27,6 +27,7 @@ C:\Users\User\source\repos\UCC\UCC\obj\Debug\net8.0-windows\refint\UCC.dll
 C:\Users\User\source\repos\UCC\UCC\obj\Debug\net8.0-windows\UCC.pdb
 C:\Users\User\source\repos\UCC\UCC\obj\Debug\net8.0-windows\UCC.genruntimeconfig.cache
 C:\Users\User\source\repos\UCC\UCC\obj\Debug\net8.0-windows\ref\UCC.dll
+<<<<<<< HEAD
 C:\Users\User\source\repos\Underground-Criminals-Club\UCC\bin\Debug\net8.0-windows\UCC.exe
 C:\Users\User\source\repos\Underground-Criminals-Club\UCC\bin\Debug\net8.0-windows\UCC.deps.json
 C:\Users\User\source\repos\Underground-Criminals-Club\UCC\bin\Debug\net8.0-windows\UCC.runtimeconfig.json
@@ -59,3 +60,34 @@ C:\Users\User\source\repos\Underground-Criminals-Club\UCC\obj\Debug\net8.0-windo
 C:\Users\User\source\repos\Underground-Criminals-Club\UCC\obj\Debug\net8.0-windows\UCC.genruntimeconfig.cache
 C:\Users\User\source\repos\Underground-Criminals-Club\UCC\obj\Debug\net8.0-windows\ref\UCC.dll
 C:\Users\User\Source\Repos\Underground-Criminals-Club\UCC\obj\Debug\net8.0-windows\UCC.CodingChallenge.resources
+=======
+D:\FP Project\UCC\bin\Debug\net8.0-windows\UCC.exe
+D:\FP Project\UCC\bin\Debug\net8.0-windows\UCC.deps.json
+D:\FP Project\UCC\bin\Debug\net8.0-windows\UCC.runtimeconfig.json
+D:\FP Project\UCC\bin\Debug\net8.0-windows\UCC.dll
+D:\FP Project\UCC\bin\Debug\net8.0-windows\UCC.pdb
+D:\FP Project\UCC\bin\Debug\net8.0-windows\Interop.WMPLib.dll
+D:\FP Project\UCC\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\Interop.WMPLib.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\Interop.MediaPlayer.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\AxInterop.WMPLib.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.csproj.ResolveComReference.cache
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.Admin.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.DashBoard.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.Properties.Resources.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.SignInFailed.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.SignInPassed.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.SignPage.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.SignUpForm.resources
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.csproj.GenerateResource.cache
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.GeneratedMSBuildEditorConfig.editorconfig
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.AssemblyInfoInputs.cache
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.AssemblyInfo.cs
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.csproj.CoreCompileInputs.cache
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.sourcelink.json
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\refint\UCC.dll
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.pdb
+D:\FP Project\UCC\obj\Debug\net8.0-windows\UCC.genruntimeconfig.cache
+D:\FP Project\UCC\obj\Debug\net8.0-windows\ref\UCC.dll
+>>>>>>> 3ad69b9ebda37429dcf94fb972bcec1d0750b2e8

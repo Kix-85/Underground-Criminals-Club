@@ -19,14 +19,14 @@ namespace UCC
         public Admin()
         {
             InitializeComponent();
-            BackgroundImage = Image.FromFile(imagePath+"mainBG.png");
+            BackgroundImage = Image.FromFile(imagePath + "mainBG.png");
             profilePicture.Image = Image.FromFile(imagePath + "profilePicture.png");
         }
 
         private void insert_Click(object sender, EventArgs e)
         {
             SignUpForm signUpForm = new SignUpForm();
-            signUpForm.Location= Location;
+            signUpForm.Location = Location;
             signUpForm.Show();
             Hide();
             Close();
@@ -85,6 +85,7 @@ namespace UCC
         private void Clear_Click(object sender, EventArgs e)
         {
             input.Text = string.Empty;
+
         }
     }
 }
