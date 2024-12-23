@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\UCC\\UCC\\UCC.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\UCC\\UCC\\UCC.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\UCC\\UCC\\UCC.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj",
         "projectName": "UCC",
-        "projectPath": "C:\\Users\\User\\source\\repos\\UCC\\UCC\\UCC.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\Underground-Criminals-Club\\UCC\\UCC.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\UCC\\UCC\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Underground-Criminals-Club\\UCC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

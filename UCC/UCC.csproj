@@ -59,8 +59,4 @@
     <None Include="C:\Users\User\source\repos\ProjectX\ProjectX\.editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-
 </Project>

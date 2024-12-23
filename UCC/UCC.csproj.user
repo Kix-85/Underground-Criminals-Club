@@ -5,7 +5,13 @@
     <Compile Update="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CodingChallenge.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MathsChallenge.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SignPage.cs">
